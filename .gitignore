@@ -12,3 +12,4 @@ ignore*
 *.token
 *.pem
 .waypoint*
+**/waypoint-server-snapshot-*
