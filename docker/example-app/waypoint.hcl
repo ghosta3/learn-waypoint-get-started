@@ -28,10 +28,10 @@ app "example-nodejs" {
     
     registry {
       use "docker" {
-        image = image
-        tag = tag
-        username = registry_username
-        password = registry_password
+        image = var.image
+        tag = var.tag
+        username = var.registry_username
+        password = var.registry_password
       }
     }
   }
