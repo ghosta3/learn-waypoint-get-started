@@ -12,6 +12,7 @@ app "example-nodejs" {
     registry {
       use "docker" {
         image = "example-nodejs"
+        tag = "latest"
       }
     }
   }
