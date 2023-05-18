@@ -13,13 +13,4 @@ app "example-nodejs" {
   deploy {
     use "docker" {}
   }
-  
-  runner {
-    enabled = true
-
-    data_source "git" {
-      url  = "https://github.com/ghosta3/learn-waypoint-get-started.git"
-      path = "docker/example-app"
-    }
-  }
 }
