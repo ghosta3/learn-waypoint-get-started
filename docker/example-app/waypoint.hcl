@@ -8,6 +8,10 @@ app "example-nodejs" {
 
   build {
     use "pack" {}
+    
+    registry {
+      use "docker" {}
+    }
   }
 
   deploy {
