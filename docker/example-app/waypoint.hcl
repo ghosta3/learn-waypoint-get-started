@@ -12,7 +12,7 @@ app "example-nodejs" {
     registry {
       use "docker" {
         image = var.image
-        tag = var.tag
+        tag = "v2023051801"
         username = var.registry_username
         password = var.registry_password
       }
