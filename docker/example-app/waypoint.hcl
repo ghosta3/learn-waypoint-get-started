@@ -1,22 +1,5 @@
 project = "example-nodejs"
 
-variable "image" {
-  type        = string
-}
-
-variable "tag" {
-  type        = string
-}
-
-variable "registry_username" {
-  type        = string
-}
-
-variable "registry_password" {
-  type        = string
-}
-
-
 app "example-nodejs" {
   labels = {
     "service" = "example-nodejs",
@@ -39,4 +22,20 @@ app "example-nodejs" {
   deploy {
     use "docker" {}
   }
+}
+
+variable "image" {
+  type        = string
+}
+
+variable "tag" {
+  type        = string
+}
+
+variable "registry_username" {
+  type        = string
+}
+
+variable "registry_password" {
+  type        = string
 }
